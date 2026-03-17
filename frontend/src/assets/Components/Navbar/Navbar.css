@@ -1,0 +1,55 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 100;
+}
+.logo {
+    height: 3rem;
+    width: auto;
+}
+.navbar a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width:0;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    transition: .3s;
+}
+.navbar a:hover::before {
+    width: 100%;
+    
+}
+.auth-buttons {
+    display: flex;
+    gap: 1rem;    
+}
+.btn {
+    background-color: rgb(255, 238, 0);
+    color: #000000;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #ffffff;
+}
