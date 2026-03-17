@@ -42,10 +42,6 @@ const Header = () => {
         
     </div>
 
-    <div className='radio-text'>
-        <h2>Listen to Jesus is Lord live radio broadcast:</h2>
-    </div>
-    
     <div className='audio-controls'>
         <audio ref={audioRef} preload="none">
             <source src="https://s3.radio.co/s97f38db97/listen" type="audio/mpeg" />
@@ -69,7 +65,12 @@ const Header = () => {
               className="volume-slider"
             />
           </div>
+
         </div>
+    </div>
+    
+    <div className='radio-text'>
+        <h2>Listen to Jesus is Lord live radio broadcast:</h2>
     </div>
     
    </section>
