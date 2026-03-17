@@ -8,17 +8,19 @@ const Navbar = () => {
   return (
     <header className='header'>
       <img src={logo} alt="RHSF Logo" className='logo' />
-      <nav className='navbar'>
-        <a href="#">Home</a>
-        <a href="#">Insitutions</a>
-        <a href="#">Map</a>
-        <a href="#">Livestream</a>
-        <a href="#">Radio</a>
-        <a href="#">Media Gallery</a>
-        <a href="#">Dashboard</a>
-        <a href="#">Reports</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+      <nav >
+        <ul className='navbar'>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/institutions">Institutions</Link></li>
+          <li><Link to="/map">Map</Link></li>
+          <li><Link to="/livestream">Livestream</Link></li>
+          <li><Link to="/radio">Radio</Link></li>
+          <li><Link to="/media gallery">Media Gallery</Link></li>
+          <li><Link to="/dashboard">Dashboard</Link></li>
+          <li><Link to="/reports">Reports</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </ul>
         
         
       </nav>
